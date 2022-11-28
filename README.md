@@ -6,6 +6,14 @@
 ## What is this?
 This script queries the GraphQL API for GitHub organizations belonging to a specific enterprise and generates a list of all organizations and their associated repositories. Once a list has been generated, the script will then clone each repository and generate a git log of all commits and associated data in csv format.
 
+You can modify the print format:
+```
+--pretty=format:'{org},{repo},%H,%ct,%an,%ae,%S,%s'
+```
+
+see [git-log](https://git-scm.com/docs/git-log) for format documentation. NOTE: Commit messages are likely to contain commas, be careful!
+
+
 ## Why?
 This script was created for a customer with 2000 plus organizations and over 200,000 repositories. The customer wanted to be able to generate a list of all repositories and their associated commits. This script was created to help them generate this data in a timely manner versus using the API to generate the data which would take days to complete.
 
