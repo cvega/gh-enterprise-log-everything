@@ -1,4 +1,4 @@
-# Run a `git log` via `git clone ` on every repository in a GitHub enterprise
+# Run a `git log` via `git clone` on every repository in a GitHub enterprise
 ![](docs/imgs/git-repo-log.png)
 
 18 minutes to read every commit in 2k+ repos in 400+ orgs which included three instances of the Linux kernel using 120 processes for cloning. 
