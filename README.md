@@ -37,6 +37,7 @@ pip install -r requirements.txt
 2. Locked repos cannot be cloned
 3. This script will not tolerate being IP blocked, it will just fail. Make sure the organization you are querying is not blocking your IP.
 4. Everything is HTTPS, no SSH support
+5. Clones user tokens which can be easily exposed through `ps`. Make sure you're running this in an isolated environment or something like a container.
 
 ## Usage
 ```
